@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ApplyForces : MonoBehaviour
@@ -14,11 +12,5 @@ public class ApplyForces : MonoBehaviour
         _rb = GetComponent<Rigidbody>();
         _rb.AddRelativeForce(0f, _forceValue, _forceValue, ForceMode.Impulse);
         _rb.AddRelativeTorque(transform.right * _torqueValue, ForceMode.Force);
-    }
-
-    void FixedUpdate()
-    {
-        /*_rb.AddRelativeForce(0f, 0f, _forceValue, ForceMode.Impulse);
-        _rb.AddRelativeTorque(transform.up * _torqueValue, ForceMode.Force);*/
     }
 }
