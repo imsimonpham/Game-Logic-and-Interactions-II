@@ -46,11 +46,14 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Game Logic II _Begin\Assets\Scripts\LabComplete.cs" />
+     <Compile Include="Assets\Game Logic II _Begin\Assets\Scripts\SimulatedPhysics.cs" />
+     <Compile Include="Assets\Game Logic II _Begin\Assets\Scripts\AirmailPackage.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\Game Logic II _Begin\Assets\Scripts\DetectCollisions.cs" />
      <Compile Include="Assets\Game Logic II _Begin\Assets\Scripts\Trigger.cs" />
      <Compile Include="Assets\Game Logic II _Begin\Assets\Scripts\ApplyForces.cs" />
      <Compile Include="Assets\Game Logic II _Begin\Assets\Scripts\Wheels.cs" />
+     <Compile Include="Assets\Game Logic II _Begin\Assets\Scripts\Launcher.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Game Logic II _Begin\Assets\GameDevHQ\Filebase\Projects\Environments\Level_Design\25D_Platformer" />
      <Folder Include="Assets\Game Logic II _Begin\Logs" />
@@ -115,6 +118,7 @@
      <None Include="Library\PackageCache\com.unity.modules.terrainphysics@1.0.0\package.json" />
      <None Include="Library\PackageCache\com.unity.mathematics@1.2.6\package.json" />
      <Folder Include="Assets\Game Logic II _Begin\Assets\GameDevHQ\Filebase\3D\Environments\Sci-Fi\Scifi_Containers_Cube_01_02\Materials" />
+     <Folder Include="Assets\Game Logic II _Begin\Assets\Prefabs" />
      <Folder Include="Assets\Game Logic II _Begin\Assets\GameDevHQ\Filebase\3D\Environments\Sci-Fi\Scifi_Barrel_04\FBX" />
      <Folder Include="Assets\Game Logic II _Begin\Assets\GameDevHQ\Filebase\3D\Environments\Sci-Fi\Scifi_Containers_Cube_01_02\tex" />
      <Folder Include="Assets\Game Logic II _Begin\Assets\GameDevHQ\Filebase\3D\Props\Tools\Hydraulics_01\tex" />

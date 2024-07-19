@@ -46,11 +46,14 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Game Logic II _Begin\Assets\Scripts\LabComplete.cs" />
+     <Compile Include="Assets\Game Logic II _Begin\Assets\Scripts\SimulatedPhysics.cs" />
+     <Compile Include="Assets\Game Logic II _Begin\Assets\Scripts\AirmailPackage.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\Game Logic II _Begin\Assets\Scripts\DetectCollisions.cs" />
      <Compile Include="Assets\Game Logic II _Begin\Assets\Scripts\Trigger.cs" />
      <Compile Include="Assets\Game Logic II _Begin\Assets\Scripts\ApplyForces.cs" />
      <Compile Include="Assets\Game Logic II _Begin\Assets\Scripts\Wheels.cs" />
+     <Compile Include="Assets\Game Logic II _Begin\Assets\Scripts\Launcher.cs" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.2f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\mono\Managed\UnityEngine.dll</HintPath>
      </Reference>

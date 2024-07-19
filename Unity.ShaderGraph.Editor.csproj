@@ -682,8 +682,8 @@
      <Compile Include="Library\PackageCache\com.unity.shadergraph@14.0.8\Editor\Drawing\Inspector\PropertyDrawers\IntegerPropertyDrawer.cs" />
      <Compile Include="Library\PackageCache\com.unity.shadergraph@14.0.8\Editor\Data\Graphs\Vector4ShaderProperty.cs" />
      <Compile Include="Library\PackageCache\com.unity.shadergraph@14.0.8\Editor\Data\Graphs\SamplerStateMaterialSlot.cs" />
-     <Compile Include="Library\PackageCache\com.unity.shadergraph@14.0.8\Editor\Generation\Collections\FieldCollection.cs" />
      <Compile Include="Library\PackageCache\com.unity.shadergraph@14.0.8\Editor\Data\Graphs\GraphConcretization.cs" />
+     <Compile Include="Library\PackageCache\com.unity.shadergraph@14.0.8\Editor\Generation\Collections\FieldCollection.cs" />
      <Compile Include="Library\PackageCache\com.unity.shadergraph@14.0.8\Editor\Serialization\MultiJsonEntry.cs" />
      <Compile Include="Library\PackageCache\com.unity.shadergraph@14.0.8\Editor\Data\Nodes\Artistic\Blend\BlendMode.cs" />
      <Compile Include="Library\PackageCache\com.unity.shadergraph@14.0.8\Editor\Importers\ShaderSubGraphMetadata.cs" />
