@@ -14,7 +14,7 @@ public class Launcher : MonoBehaviour
 
     private void FixedUpdate()
     {
-        _simulatedPhysics.SimulatedTrajectory(_airmailPackagePrefab, transform.position, transform.forward * _force);
+        _simulatedPhysics.CreateSimulatedTrajectory(_airmailPackagePrefab, transform.position, transform.forward * _force);
     }
 
     private void Update()

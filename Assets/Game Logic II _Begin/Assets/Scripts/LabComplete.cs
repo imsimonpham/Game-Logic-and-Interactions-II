@@ -315,6 +315,7 @@ public class LabComplete : MonoBehaviour
 
                 foreach (GameObject item in labItems)
                 {
+                    if(item == null) return;
                     if (item.GetComponent<Rigidbody>() != null && item.GetComponent<Collider>() != null)
                     {
                         isCriteriaMet = true;

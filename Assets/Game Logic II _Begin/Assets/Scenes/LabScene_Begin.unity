@@ -11897,8 +11897,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 502035117}
-  m_LocalRotation: {x: -0.000985092, y: -0.9978949, z: 0.06295092, w: -0.015559467}
-  m_LocalPosition: {x: 6.0618896, y: 4.410499, z: -0.9453597}
+  m_LocalRotation: {x: 0.022205224, y: -0.97502553, z: 0.11460194, w: 0.18894093}
+  m_LocalPosition: {x: 12.312899, y: 5.302879, z: -4.55928}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -40939,6 +40939,10 @@ PrefabInstance:
       value: Portal (1)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d679271cb90734f4f93da58205b970f1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d679271cb90734f4f93da58205b970f1, type: 3}
       propertyPath: m_TagString
       value: Obstacle
       objectReference: {fileID: 0}
@@ -56563,7 +56567,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2032372372}
-  m_LocalRotation: {x: 0.25582117, y: 0.75355446, z: 0.3796908, w: -0.4717479}
+  m_LocalRotation: {x: 0.23982558, y: 0.7587967, z: 0.36962843, w: -0.4796729}
   m_LocalPosition: {x: -0.022098744, y: 2.313932, z: -0}
   m_LocalScale: {x: 4.0496697, y: 4.04967, z: 4.04967}
   m_ConstrainProportionsScale: 0
@@ -56571,7 +56575,7 @@ Transform:
   - {fileID: 2166029422944205127}
   m_Father: {fileID: 4847129706071587724}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: -54.449, y: -117.29, z: 2.693}
+  m_LocalEulerAnglesHint: {x: -52.281, y: -115.832, z: 0.876}
 --- !u!114 &2032372374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56602,9 +56606,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed9705bc9cb403f40a198d36098c6830, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _labParent: {fileID: 1465259519}
   _line: {fileID: 2032372376}
-  _maxPhysicsInterations: 20
+  _maxPhysicsIterations: 20
+  _steps: 4
 --- !u!120 &2032372376
 LineRenderer:
   serializedVersion: 2
@@ -56655,8 +56659,8 @@ LineRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.013122559
-        value: 0.11764717
+        time: 0.010477056
+        value: 0.058475573
         inSlope: 0
         outSlope: 0
         tangentMode: 0

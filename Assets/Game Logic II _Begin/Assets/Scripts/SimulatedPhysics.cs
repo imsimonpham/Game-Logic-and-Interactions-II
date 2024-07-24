@@ -6,10 +6,11 @@ public class SimulatedPhysics : MonoBehaviour
 {
     private Scene _simulatedScene;
     private PhysicsScene _physicsScence;
-    [SerializeField] private Transform _labParent;
+    private Transform _labParent;
 
     [SerializeField] private LineRenderer _line;
-    [SerializeField] private int _maxPhysicsInterations;
+    [SerializeField] private int _maxPhysicsIterations;
+    [SerializeField] private int _steps;
     
     void Start()
     {
@@ -21,37 +22,49 @@ public class SimulatedPhysics : MonoBehaviour
     {
         _simulatedScene = SceneManager.CreateScene("Simulated Physics", new CreateSceneParameters(LocalPhysicsMode.Physics3D));
         _physicsScence = _simulatedScene.GetPhysicsScene();
+        MoveObjectsToNewScene();
+    }
 
-        foreach (Transform obstacle in _labParent)
+    void MoveObjectsToNewScene()
+    {
+        foreach (Transform sceneObject in _labParent)
         {
-            if (obstacle.CompareTag("Obstacle"))
+            if (sceneObject.CompareTag("Obstacle"))
             {
-                var simulatedObstacle = Instantiate(obstacle.gameObject, obstacle.position, obstacle.rotation);
-                if (simulatedObstacle.GetComponent<Renderer>() != null)
+                var simulatedObject = Instantiate(sceneObject.gameObject, sceneObject.position, sceneObject.rotation);
+                if (sceneObject.GetComponent<Renderer>() != null)
                 {
-                    obstacle.GetComponent<Renderer>().enabled = false;
+                    sceneObject.GetComponent<Renderer>().enabled = false;
                 }
                 
-                SceneManager.MoveGameObjectToScene(simulatedObstacle, _simulatedScene);
+                SceneManager.MoveGameObjectToScene(simulatedObject, _simulatedScene);
             }
         }
     }
 
-    public void SimulatedTrajectory(AirmailPackage airmailPackagePrefab, Vector3 pos, Vector3 velocity)
+    public void CreateSimulatedTrajectory(AirmailPackage airmailPackagePrefab, Vector3 pos, Vector3 velocity)
     {
         var simulatedObj = Instantiate(airmailPackagePrefab, pos, Quaternion.identity);
-        simulatedObj.GetComponent<Renderer>().enabled = false;
+        if (simulatedObj.GetComponent<Renderer>() != null)
+        {
+            simulatedObj.GetComponent<Renderer>().enabled = false;
+        }
         SceneManager.MoveGameObjectToScene(simulatedObj.gameObject, _simulatedScene);
         simulatedObj.Init(velocity);
 
-        _line.positionCount = _maxPhysicsInterations;
-        for (int i = 0; i < _maxPhysicsInterations; i++)
-        {
-            _physicsScence.Simulate(Time.fixedDeltaTime * 3);
-            _line.SetPosition(i, simulatedObj.transform.position);
-        }
+        DrawTrajectoryLine(simulatedObj);
         
         Destroy(simulatedObj.gameObject);
+    }
+
+    void DrawTrajectoryLine(AirmailPackage simulatedObject)
+    {
+        _line.positionCount = _maxPhysicsIterations;
+        for (int i = 0; i < _maxPhysicsIterations; i++)
+        {
+            _physicsScence.Simulate(Time.fixedDeltaTime * _steps);
+            _line.SetPosition(i, simulatedObject.transform.position);
+        }
     }
 }
 
