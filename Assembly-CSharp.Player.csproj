@@ -48,6 +48,7 @@
      <Compile Include="Assets\Game Logic II _Begin\Assets\Scripts\LabComplete.cs" />
      <Compile Include="Assets\Game Logic II _Begin\Assets\Scripts\SimulatedPhysics.cs" />
      <Compile Include="Assets\Game Logic II _Begin\Assets\Scripts\AirmailPackage.cs" />
+     <Compile Include="Assets\Game Logic II _Begin\Assets\Scripts\Gravity.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\Game Logic II _Begin\Assets\Scripts\DetectCollisions.cs" />
      <Compile Include="Assets\Game Logic II _Begin\Assets\Scripts\Trigger.cs" />

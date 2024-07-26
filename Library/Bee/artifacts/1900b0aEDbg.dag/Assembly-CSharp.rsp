@@ -369,6 +369,7 @@
 "Assets/Game Logic II _Begin/Assets/Scripts/AirmailPackage.cs"
 "Assets/Game Logic II _Begin/Assets/Scripts/ApplyForces.cs"
 "Assets/Game Logic II _Begin/Assets/Scripts/DetectCollisions.cs"
+"Assets/Game Logic II _Begin/Assets/Scripts/Gravity.cs"
 "Assets/Game Logic II _Begin/Assets/Scripts/LabComplete.cs"
 "Assets/Game Logic II _Begin/Assets/Scripts/Launcher.cs"
 "Assets/Game Logic II _Begin/Assets/Scripts/SimulatedPhysics.cs"
