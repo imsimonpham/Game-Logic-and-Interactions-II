@@ -120,6 +120,7 @@
      <None Include="Library\PackageCache\com.unity.mathematics@1.2.6\package.json" />
      <Folder Include="Assets\Game Logic II _Begin\Assets\GameDevHQ\Filebase\3D\Environments\Sci-Fi\Scifi_Containers_Cube_01_02\Materials" />
      <Folder Include="Assets\Game Logic II _Begin\Assets\Prefabs" />
+     <Folder Include="Assets\Game Logic II _Begin\Assets\Scenes\LabScene_Begin" />
      <Folder Include="Assets\Game Logic II _Begin\Assets\GameDevHQ\Filebase\3D\Environments\Sci-Fi\Scifi_Barrel_04\FBX" />
      <Folder Include="Assets\Game Logic II _Begin\Assets\GameDevHQ\Filebase\3D\Environments\Sci-Fi\Scifi_Containers_Cube_01_02\tex" />
      <Folder Include="Assets\Game Logic II _Begin\Assets\GameDevHQ\Filebase\3D\Props\Tools\Hydraulics_01\tex" />
